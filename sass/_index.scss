@@ -1,0 +1,226 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+@import "mixin";
+@import "fonts";
+@import "colors";
+
+nav {
+  background-color: $colorSecondary;
+  font-family: $fontSecondary;
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  width: 10%;
+  align-items: center;
+  .openClose {
+    display: none;
+  }
+  li {
+    padding: 10px;
+    a {
+      color: white;
+      text-transform: uppercase;
+    }
+    :hover {
+      color: $colorHover;
+    }
+  }
+}
+
+.aboutMe {
+  @include blockGeneral();
+  .topAboutMe {
+    img {
+      width: 200px;
+      border-radius: 0px 100px 100px 0;
+      text-align: center;
+    }
+    h1 {
+      @include title();
+    }
+    h2 {
+      font-family: $fontSecondary;
+      text-transform: uppercase;
+      font-size: 18px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+    h2:last-child {
+      text-decoration-line: underline;
+      a {
+        color: $colorSecondary;
+      }
+      a:hover {
+        color: $colorTertiary;
+        text-decoration-line: none;
+        cursor: pointer;
+      }
+    }
+  }
+  .centerAboutMe {
+    line-height: 30px;
+    font-family: $fontSecondary;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  .endAboutMe {
+    padding-top: 40px;
+    ul {
+      display: flex;
+      li {
+        :hover {
+          background-color: $colorTertiary;
+        }
+        a {
+          background-color: $colorSecondary;
+          padding: 15px;
+          border-radius: 100%;
+          font-size: 20px;
+          i {
+            color: white;
+          }
+        }
+      }
+      li:first-child {
+        margin-right: 15px;
+      }
+    }
+  }
+}
+.education,
+.courses,
+.experience {
+  @include blockGeneral();
+  > div {
+    @include title();
+  }
+  article {
+    padding: 20px 0;
+    > div {
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      > div {
+        font-size: 25px;
+        font-family: $fontSecondary;
+        > div {
+          font-size: 18px;
+          color: $colorGrey;
+        }
+      }
+    }
+    .technologiesSecondExperience,
+    .technologiesThirdExperience,
+    .technologiesFirstExperience,
+    .technologiesQuarterExperience {
+      color: $colorGrey;
+    }
+    p {
+      line-height: 30px;
+      font-family: $fontSecondary;
+      width: 80%;
+    }
+    .date {
+      font-size: 12px;
+      color: $colorSecondary;
+    }
+    .educationTechnologies {
+      padding-top: 10px;
+      line-height: 30px;
+      color: $colorGrey;
+    }
+    ul {
+      li {
+        > div {
+          font-size: 16px;
+          font-family: $fontSecondary;
+          padding: 20px 0 0 20px;
+        }
+        p {
+          color: $colorGrey;
+        }
+      }
+    }
+  }
+}
+.technologies {
+  @include blockGeneral();
+  > div {
+    @include title();
+  }
+  .technologiesSubtitle {
+    @include subtitle();
+    padding: 10px 0;
+  }
+  .technologiesSubtitle {
+    font-size: 20px;
+    padding-top: 20px;
+  }
+  .toptechnologies {
+    ul {
+      padding-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        width: 120px;
+        i {
+          font-size: 40px;
+          transition: 1s;
+        }
+        :hover {
+          color: $colorTertiary;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .bottomtechnologies {
+    ul {
+      padding-top: 20px;
+      padding-left: 30px;
+      li {
+        list-style: initial;
+        font-size: 18px;
+        line-height: 40px;
+        transition: 1s;
+      }
+      :hover {
+        color: $colorTertiary;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.proyect {
+  @include blockGeneral();
+
+  div {
+    @include title();
+    padding: 20px 0;
+  }
+  ul {
+    font-size: 20px;
+    line-height: 40px;
+    li {
+      :hover {
+        color: $colorTertiary;
+      }
+    }
+  }
+}
+
+.animationSvg {
+  width: 100%;
+  background-color: $colorPrimary;
+  text-align: center;
+}

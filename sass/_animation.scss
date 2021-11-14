@@ -1,0 +1,76 @@
+#humo1 {
+  animation: humo 4s 0.2s linear infinite;
+}
+#humo2 {
+  animation: humo 4s 0.2s linear infinite;
+}
+#item2 {
+  transform: translate(0%, -7%);
+  animation: item 3s 4s both infinite;
+}
+#item3 {
+  transform: translate(0%, -14%);
+  animation: item 3s 4s both infinite;
+}
+#mech {
+  animation: mech 5s 2s infinite;
+  transition: 1s;
+}
+#mech2 {
+  animation: mech2 5s 2s infinite;
+  transition: 1s;
+}
+#circle {
+  transform: rotateX(15deg);
+  animation: two 2s infinite;
+  animation-direction: alternate;
+}
+@keyframes humo {
+  0% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+@keyframes mech {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes mech2 {
+  0% {
+    transform: translateX(-6px);
+  }
+  50% {
+    transform: translateX(3px);
+  }
+  100% {
+    transform: translateX(-6px);
+  }
+}
+@keyframes two {
+  0% {
+    transform: rotateY(0);
+  }
+  100% {
+    transform: rotate(5deg, 5deg);
+  }
+}
+@keyframes item {
+  100% {
+    transform: unset;
+  }
+  50% {
+    transform: matrix3d(5)
+  }
+}

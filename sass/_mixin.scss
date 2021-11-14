@@ -1,0 +1,20 @@
+@import "colors";
+
+@mixin title {
+  font-size: 50px;
+  font-family: $fontPrimary;
+}
+@mixin subtitle {
+  font-size: 30px;
+  font-family: $fontSecondary;
+}
+
+@mixin blockGeneral {
+  width: 85%;
+  background-color: $colorPrimary;
+  display: flex;
+  padding-top: 100px;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15%;
+}

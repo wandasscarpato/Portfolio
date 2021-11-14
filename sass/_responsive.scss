@@ -1,0 +1,165 @@
+@import "colors";
+
+@media (max-width: 600px) {
+  nav {
+    position: relative;
+    .openClose {
+      display: block;
+      i {
+        font-size: 40px;
+        color: white;
+        padding-left: 10px;
+      }
+    }
+    width: 100%;
+    flex-direction: initial;
+    display: block;
+    height: auto;
+    .active {
+      transform: translate(-600px);
+      transition: all 0.5s ease;
+      height: 20px;
+    }
+    .opacity {
+      transition: all 0.5s ease;
+    }
+  }
+  .aboutMe {
+    width: 100%;
+    padding: 50px 0;
+    img {
+      display: none;
+    }
+    .topAboutMe {
+      padding-left: 50px;
+      h1 {
+        @include title();
+        font-size: 60px;
+      }
+    }
+    .centerAboutMe {
+      padding-left: 50px;
+      width: 80%;
+    }
+    .endAboutMe {
+      padding-left: 100px;
+    }
+  }
+  //-----------------
+  .education,
+  .courses,
+  .experience {
+    padding-top: 50px;
+    padding-left: 0px;
+    width: 100%;
+    > div {
+      padding-left: 50px;
+    }
+    article {
+      padding-left: 50px;
+      p {
+        line-height: 30px;
+        font-family: $fontSecondary;
+        width: 60%;
+      }
+    }
+  }
+  //-----------------
+  .technologies {
+    padding-top: 50px;
+    padding-left: 0px;
+    width: 100%;
+    > div {
+      padding-left: 50px;
+    }
+  }
+  .proyect {
+    padding-top: 50px;
+    padding-left: 0px;
+    width: 100%;
+    div {
+      padding-left: 50px;
+    }
+    ul {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  nav {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    ul {
+      display: flex;
+    }
+  }
+  .aboutMe {
+    width: 100%;
+    padding: 50px 0;
+    img {
+      display: none;
+    }
+    .topAboutMe {
+      padding-left: 50px;
+      h1 {
+        @include title();
+        font-size: 60px;
+      }
+    }
+    .centerAboutMe {
+      padding-left: 50px;
+      width: 80%;
+    }
+    .endAboutMe {
+      padding-left: 100px;
+    }
+  }
+  .education,
+  .courses,
+  .experience {
+    padding: 0;
+    width: 100%;
+    > div {
+      @include title();
+      padding-left: 50px;
+    }
+    article {
+      padding-left: 50px;
+      p {
+        line-height: 30px;
+        font-family: $fontSecondary;
+        width: 60%;
+      }
+    }
+  }
+  .education {
+    padding-top: 50px;
+  }
+  .technologies {
+    padding-top: 50px;
+    padding-left: 0px;
+    width: 100%;
+    > div {
+      padding-left: 50px;
+    }
+  }
+  .proyect {
+    padding-top: 50px;
+    padding-left: 0px;
+    width: 100%;
+    div {
+      padding-left: 50px;
+    }
+    ul {
+      padding-left: 50px;
+    }
+  }
+}
+
+@media (max-width: 1000px){
+    .animationSvg{
+        display: none;
+    }
+}

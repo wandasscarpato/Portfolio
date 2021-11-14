@@ -1,0 +1,725 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background-color: #702e85;
+  font-family: "ABeeZee", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  display: flex;
+  height: 100vh;
+  width: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .openClose {
+  display: none;
+}
+
+nav li {
+  padding: 10px;
+}
+
+nav li a {
+  color: white;
+  text-transform: uppercase;
+}
+
+nav li :hover {
+  color: #eac7f5;
+}
+
+.aboutMe {
+  width: 85%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 15%;
+}
+
+.aboutMe .topAboutMe img {
+  width: 200px;
+  border-radius: 0px 100px 100px 0;
+  text-align: center;
+}
+
+.aboutMe .topAboutMe h1 {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+}
+
+.aboutMe .topAboutMe h2 {
+  font-family: "ABeeZee", sans-serif;
+  text-transform: uppercase;
+  font-size: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.aboutMe .topAboutMe h2:last-child {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.aboutMe .topAboutMe h2:last-child a {
+  color: #702e85;
+}
+
+.aboutMe .topAboutMe h2:last-child a:hover {
+  color: #db98a3;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  cursor: pointer;
+}
+
+.aboutMe .centerAboutMe {
+  line-height: 30px;
+  font-family: "ABeeZee", sans-serif;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.aboutMe .endAboutMe {
+  padding-top: 40px;
+}
+
+.aboutMe .endAboutMe ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.aboutMe .endAboutMe ul li :hover {
+  background-color: #db98a3;
+}
+
+.aboutMe .endAboutMe ul li a {
+  background-color: #702e85;
+  padding: 15px;
+  border-radius: 100%;
+  font-size: 20px;
+}
+
+.aboutMe .endAboutMe ul li a i {
+  color: white;
+}
+
+.aboutMe .endAboutMe ul li:first-child {
+  margin-right: 15px;
+}
+
+.education,
+.courses,
+.experience {
+  width: 85%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 15%;
+}
+
+.education > div,
+.courses > div,
+.experience > div {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+}
+
+.education article,
+.courses article,
+.experience article {
+  padding: 20px 0;
+}
+
+.education article > div,
+.courses article > div,
+.experience article > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90%;
+}
+
+.education article > div > div,
+.courses article > div > div,
+.experience article > div > div {
+  font-size: 25px;
+  font-family: "ABeeZee", sans-serif;
+}
+
+.education article > div > div > div,
+.courses article > div > div > div,
+.experience article > div > div > div {
+  font-size: 18px;
+  color: #5f5e5e;
+}
+
+.education article .technologiesSecondExperience,
+.education article .technologiesThirdExperience,
+.education article .technologiesFirstExperience,
+.education article .technologiesQuarterExperience,
+.courses article .technologiesSecondExperience,
+.courses article .technologiesThirdExperience,
+.courses article .technologiesFirstExperience,
+.courses article .technologiesQuarterExperience,
+.experience article .technologiesSecondExperience,
+.experience article .technologiesThirdExperience,
+.experience article .technologiesFirstExperience,
+.experience article .technologiesQuarterExperience {
+  color: #5f5e5e;
+}
+
+.education article p,
+.courses article p,
+.experience article p {
+  line-height: 30px;
+  font-family: "ABeeZee", sans-serif;
+  width: 80%;
+}
+
+.education article .date,
+.courses article .date,
+.experience article .date {
+  font-size: 12px;
+  color: #702e85;
+}
+
+.education article .educationTechnologies,
+.courses article .educationTechnologies,
+.experience article .educationTechnologies {
+  padding-top: 10px;
+  line-height: 30px;
+  color: #5f5e5e;
+}
+
+.education article ul li > div,
+.courses article ul li > div,
+.experience article ul li > div {
+  font-size: 16px;
+  font-family: "ABeeZee", sans-serif;
+  padding: 20px 0 0 20px;
+}
+
+.education article ul li p,
+.courses article ul li p,
+.experience article ul li p {
+  color: #5f5e5e;
+}
+
+.technologies {
+  width: 85%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 15%;
+}
+
+.technologies > div {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+}
+
+.technologies .technologiesSubtitle {
+  font-size: 30px;
+  font-family: "ABeeZee", sans-serif;
+  padding: 10px 0;
+}
+
+.technologies .technologiesSubtitle {
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.technologies .toptechnologies ul {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.technologies .toptechnologies ul li {
+  width: 120px;
+}
+
+.technologies .toptechnologies ul li i {
+  font-size: 40px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.technologies .toptechnologies ul li :hover {
+  color: #db98a3;
+  cursor: pointer;
+}
+
+.technologies .bottomtechnologies ul {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+.technologies .bottomtechnologies ul li {
+  list-style: initial;
+  font-size: 18px;
+  line-height: 40px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.technologies .bottomtechnologies ul :hover {
+  color: #db98a3;
+  cursor: pointer;
+}
+
+.proyect {
+  width: 85%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 15%;
+}
+
+.proyect div {
+  font-size: 50px;
+  font-family: "Dancing Script", cursive;
+  padding: 20px 0;
+}
+
+.proyect ul {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.proyect ul li :hover {
+  color: #db98a3;
+}
+
+.animationSvg {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  nav {
+    position: relative;
+    width: 100%;
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    display: block;
+    height: auto;
+  }
+  nav .openClose {
+    display: block;
+  }
+  nav .openClose i {
+    font-size: 40px;
+    color: white;
+    padding-left: 10px;
+  }
+  nav .active {
+    -webkit-transform: translate(-600px);
+            transform: translate(-600px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    height: 20px;
+  }
+  nav .opacity {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .aboutMe {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .aboutMe img {
+    display: none;
+  }
+  .aboutMe .topAboutMe {
+    padding-left: 50px;
+  }
+  .aboutMe .topAboutMe h1 {
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+  }
+  .aboutMe .centerAboutMe {
+    padding-left: 50px;
+    width: 80%;
+  }
+  .aboutMe .endAboutMe {
+    padding-left: 100px;
+  }
+  .education,
+  .courses,
+  .experience {
+    padding-top: 50px;
+    padding-left: 0px;
+    width: 100%;
+  }
+  .education > div,
+  .courses > div,
+  .experience > div {
+    padding-left: 50px;
+  }
+  .education article,
+  .courses article,
+  .experience article {
+    padding-left: 50px;
+  }
+  .education article p,
+  .courses article p,
+  .experience article p {
+    line-height: 30px;
+    font-family: "ABeeZee", sans-serif;
+    width: 60%;
+  }
+  .technologies {
+    padding-top: 50px;
+    padding-left: 0px;
+    width: 100%;
+  }
+  .technologies > div {
+    padding-left: 50px;
+  }
+  .proyect {
+    padding-top: 50px;
+    padding-left: 0px;
+    width: 100%;
+  }
+  .proyect div {
+    padding-left: 50px;
+  }
+  .proyect ul {
+    padding-left: 50px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  nav {
+    height: 40px;
+    width: 100%;
+    position: relative;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutMe {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .aboutMe img {
+    display: none;
+  }
+  .aboutMe .topAboutMe {
+    padding-left: 50px;
+  }
+  .aboutMe .topAboutMe h1 {
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    font-size: 60px;
+  }
+  .aboutMe .centerAboutMe {
+    padding-left: 50px;
+    width: 80%;
+  }
+  .aboutMe .endAboutMe {
+    padding-left: 100px;
+  }
+  .education,
+  .courses,
+  .experience {
+    padding: 0;
+    width: 100%;
+  }
+  .education > div,
+  .courses > div,
+  .experience > div {
+    font-size: 50px;
+    font-family: "Dancing Script", cursive;
+    padding-left: 50px;
+  }
+  .education article,
+  .courses article,
+  .experience article {
+    padding-left: 50px;
+  }
+  .education article p,
+  .courses article p,
+  .experience article p {
+    line-height: 30px;
+    font-family: "ABeeZee", sans-serif;
+    width: 60%;
+  }
+  .education {
+    padding-top: 50px;
+  }
+  .technologies {
+    padding-top: 50px;
+    padding-left: 0px;
+    width: 100%;
+  }
+  .technologies > div {
+    padding-left: 50px;
+  }
+  .proyect {
+    padding-top: 50px;
+    padding-left: 0px;
+    width: 100%;
+  }
+  .proyect div {
+    padding-left: 50px;
+  }
+  .proyect ul {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .animationSvg {
+    display: none;
+  }
+}
+
+#humo1 {
+  -webkit-animation: humo 4s 0.2s linear infinite;
+          animation: humo 4s 0.2s linear infinite;
+}
+
+#humo2 {
+  -webkit-animation: humo 4s 0.2s linear infinite;
+          animation: humo 4s 0.2s linear infinite;
+}
+
+#item2 {
+  -webkit-transform: translate(0%, -7%);
+          transform: translate(0%, -7%);
+  -webkit-animation: item 3s 4s both infinite;
+          animation: item 3s 4s both infinite;
+}
+
+#item3 {
+  -webkit-transform: translate(0%, -14%);
+          transform: translate(0%, -14%);
+  -webkit-animation: item 3s 4s both infinite;
+          animation: item 3s 4s both infinite;
+}
+
+#mech {
+  -webkit-animation: mech 5s 2s infinite;
+          animation: mech 5s 2s infinite;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#mech2 {
+  -webkit-animation: mech2 5s 2s infinite;
+          animation: mech2 5s 2s infinite;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#circle {
+  -webkit-transform: rotateX(15deg);
+          transform: rotateX(15deg);
+  -webkit-animation: two 2s infinite;
+          animation: two 2s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes humo {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  100% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+}
+
+@keyframes humo {
+  0% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  50% {
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
+  }
+  100% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+}
+
+@-webkit-keyframes mech {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes mech {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@-webkit-keyframes mech2 {
+  0% {
+    -webkit-transform: translateX(-6px);
+            transform: translateX(-6px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(-6px);
+            transform: translateX(-6px);
+  }
+}
+
+@keyframes mech2 {
+  0% {
+    -webkit-transform: translateX(-6px);
+            transform: translateX(-6px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+            transform: translateX(3px);
+  }
+  100% {
+    -webkit-transform: translateX(-6px);
+            transform: translateX(-6px);
+  }
+}
+
+@-webkit-keyframes two {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotate(5deg, 5deg);
+            transform: rotate(5deg, 5deg);
+  }
+}
+
+@keyframes two {
+  0% {
+    -webkit-transform: rotateY(0);
+            transform: rotateY(0);
+  }
+  100% {
+    -webkit-transform: rotate(5deg, 5deg);
+            transform: rotate(5deg, 5deg);
+  }
+}
+
+@-webkit-keyframes item {
+  100% {
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  50% {
+    -webkit-transform: matrix3d(5);
+            transform: matrix3d(5);
+  }
+}
+
+@keyframes item {
+  100% {
+    -webkit-transform: unset;
+            transform: unset;
+  }
+  50% {
+    -webkit-transform: matrix3d(5);
+            transform: matrix3d(5);
+  }
+}
+/*# sourceMappingURL=style.css.map */
